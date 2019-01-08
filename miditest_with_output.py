@@ -23,7 +23,7 @@ TypingReleaseCommandHex = 0xF0
 #the hex ps/2 key release command
 
 
-#the data in the following are sent least significant bit first
+#the data in the following are used for bitbanging the ps/2 data line. first bit is 0, then data sent least significant bit first, then a parity bit to ensure the message has even parity once the ending by (1) is sent
 
 TypingReleaseTable = [0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1]
 
